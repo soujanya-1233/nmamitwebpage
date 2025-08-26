@@ -1,0 +1,80 @@
+body h1,h2,h3,p,ul,li{
+    margin:0;
+    padding:0;
+}
+body{
+  font-family:arial,sans-serif;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+header{
+  display:flex;
+  align-items:center;
+  padding:20px;
+  background-color:#0d1470;
+  color:rgb(201, 173, 173);
+}
+.logo img{
+     max-height:60 px;
+}
+.college-info{
+   margin-left:20px;
+}
+nav{
+  background-color:#295364;
+}
+.menu{
+  display:flex;
+  list-style:none;
+  padding:10px;
+}
+.menu li{
+   margin-right:20px;
+}
+.menu a{
+   color:white;
+   text-decoration:none;
+}
+img{
+    max-width:100%;
+    height:auto;
+}
+.submenu{
+    display:none;
+    position:absolute;
+    background-color:#444;
+    list-style:none;
+    padding:10px;
+}
+.dropdown:hover  .submenu{
+   display:block;
+}
+.submenu li{
+   margin:5px 0;
+}
+li a:hover{
+   background-color:rgba(175, 118, 118, 0.384);
+   color:black;
+}
+footer{
+  margin-top:auto;
+  background-color:#333;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+.soical-links a{
+  color:#e70505;
+  text-decoration:none;
+  margin:0 10px;
+}
+@media screen and (max-width:768px){
+header{
+   flex-direction:column;
+}
+.logo{
+   margin-bottom:1rem;
+}
+}    
+
